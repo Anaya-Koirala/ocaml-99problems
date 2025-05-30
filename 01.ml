@@ -7,5 +7,9 @@ let rec last (lst : 'a list ): 'a option=
 ;;
 
 last [1; 2; 3; 4; 5] |> Option.get |> print_int ;;
-print_string "\n";;
-last ["1"; "2"; "3"; "4"] |> Option.get |> print_endline
+print_endline ();;
+last ["1"; "2"; "3"; "4"] |> Option.get |> print_endline ;;
+
+(* Same thing, different composition operators  *)
+print_int @@ Option.get @@ last [1; 2; 3; 4; 5];;
+print_endline @@ Option.get @@ last ["1"; "2"; "3"; "4"]
