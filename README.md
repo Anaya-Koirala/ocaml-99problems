@@ -1,3 +1,3 @@
 # OCaml 99 Problems
-This is my attempt to solve the 99 Problems in Ocaml excercies.
+This is my attempt at solving the ``99 Problems in Ocaml" exercise set.
 [https://ocaml.org/exercises]
